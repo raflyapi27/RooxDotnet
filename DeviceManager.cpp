@@ -109,8 +109,6 @@ void DeviceManager::sendData() {
     int httpResponseCode = http.POST(json);
     if (httpResponseCode > 0) {
       String payload = http.getString();
-      Serial.print("Respon server: ");
-      Serial.println(payload);
       if (_useRelay) handleRelay(payload);
     } else {
       Serial.print("Koneksi WiFi OK, tapi gagal hubungi server. Error: ");
