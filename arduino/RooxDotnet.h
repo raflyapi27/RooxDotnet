@@ -46,7 +46,7 @@ class DeviceManager {
     // WiFi & server
     const char* _ssid;
     const char* _password;
-    static constexpr const char* _server = "http://192.168.1.5:3000/sensor";
+    static constexpr const char* _server = "https://start.starlaxy.site/sensor";
     const char* _deviceID;
     const char* _deviceName;
     const char* _token;
